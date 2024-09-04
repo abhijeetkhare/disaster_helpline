@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Helpline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="nav" style="display: flex; width: 100%; justify-content: space-between;">
+        <div style="display: flex;">
+            <img height="50px" src="/img/logo.png" alt="" style="padding: 4px;">
+            <h3>Disaster Helpline</h3>
+        </div>
+        <div id="cli" style="display: flex; justify-content: space-between; width: 40%; padding-right: 5%;">
+            <div class="navi" style="display: flex;"><i class="fa-solid fa-house"></i> <a href="/index.html"><h4>Home</h4></a></div>
+            <div class="navi" style="display: flex;"><i class="fa-solid fa-handshake-angle"></i><a href="/helpline.html"><h4 >Helpline</h4></a></div>
+            <div class="navi" style="display: flex;"><i class="fa-solid fa-phone"></i><h4>Contact Us</h4></div>
+            <div class="navi" style="display: flex;"><a href="/about.html"><h4>About Us</h4></a></div>
+        </div>
+    </div>
+
+    <!-- Moving bar is now just below the nav -->
+    <div class="moving-bar">
+        <span>This is a moving bar that scrolls across the screen!</span>
+    </div>
+
+    <div style="flex: 1; margin-top: 0px;">
+        
+        
+        <div id="main" style=" width: 100%; padding: 15px; display: flex;justify-content: center; ">
+            <div style="width: 30%; font-size: larger;">
+            <h1 >Government Tender Application Form</h1>
+            <p >Please fill out the form below to apply for one of the available tenders.</p>
+        
+            <form style="display: flex;flex-direction: column; justify-content: center;" action="/submit-tender" method="POST">
+                <label  for="tender-id">Select Tender:</label>
+                <select id="tender-id" name="tender-id" required>
+                    <option value="DR2024-001">Disaster Relief Supplies - DR2024-001</option>
+                    <option value="ES2024-002">Emergency Shelter Construction - ES2024-002</option>
+                </select>
+                <br><br>
+        
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company-name" required>
+                <br><br>
+        
+                <label for="contact-person">Contact Person:</label>
+                <input type="text" id="contact-person" name="contact-person" required>
+                <br><br>
+        
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br><br>
+        
+                <label for="address">Company Address:</label>
+                <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+                <br><br>
+        
+                <label for="bid-amount">Bid Amount (in USD):</label>
+                <input type="number" id="bid-amount" name="bid-amount" required>
+                <br><br>
+        
+                <label for="proposal">Proposal Document:</label>
+                <input type="file" id="proposal" name="proposal" accept=".pdf,.doc,.docx" required>
+                <br><br>
+        
+                <label for="experience">Previous Experience in Disaster Management:</label>
+                <textarea id="experience" name="experience" rows="5" cols="50" required></textarea>
+                <br><br>
+        
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <!-- <hr style="margin: 2px;"> -->
+    <footer>
+        <div id="foot" style="width: 100%; padding: 10px; text-align: center;">
+            <div style="display: flex; justify-content: center; gap: 20px;">
+                <a href="/terms.html" target="_blank"><p>Term of Use</p></a>
+                <a href="/websitepolicy.html" target="_blank"><p>Website Policy</p></a>
+                <p>Donate</p>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 20px;">
+                
+                <a href="/rti.html" target="_blank"><p>RTI</p></a>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

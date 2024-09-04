@@ -1,0 +1,124 @@
+#nav{
+    background-color: rgba(0, 0, 0,0.95);
+    margin: 0px;
+    border-radius: 5px;
+    position: fixed;
+            top: 0;
+}
+h1,h2,h3,h4,p,ul,li{
+    color: aliceblue;
+}
+body{
+    background-color: #121212;
+    background-image: url(/img/background.png);
+    background-size:cover ;
+}
+/* #side{
+    background-color: rgba(0, 0, 0,0.6);
+    border-radius: 5px;
+} */
+i{
+    color: aliceblue;
+    padding: 10px;
+    padding-top: 20px;
+    
+}
+#main{
+   background-color: rgba(0, 0, 0,0.5);
+   border-radius: 5px;
+}
+.box{
+    margin: 20px;
+    background-color: rgba(0, 0, 0,0.5);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    
+    
+}
+p{
+    text-align: justify;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.butt{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #121212;
+    color: aliceblue;
+    opacity: 0.7;
+    
+}
+.butt:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+
+
+html, body {
+  height: 100%; /* Ensures the body takes up the full height */
+  margin: 0; /* Removes default margin */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+}
+
+#main {
+  flex: 1; /* Takes up remaining space */
+}
+
+footer {
+    border-radius: 5px;
+  background: rgba(0, 0, 0,0.9); /* Optional: Add background color for visibility */
+  padding: 10px; /* Adds padding around footer content */
+  text-align: center; /* Centers the text */
+}
+ul{
+    padding-left: 10px;
+}
+
+.navi{
+    opacity: 0.7;
+}
+.navi:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+#cli{
+    cursor: pointer;
+}
+.box:hover{
+    scale: 1.05;
+}
+.moving-bar {
+    width: 100%;
+    margin-top: 60px;
+    height: 150%; 
+    overflow: hidden;
+    white-space: nowrap;
+    background-color:rgba(0, 0, 0,0.5);
+    color: white;
+    padding: 16px;
+    box-sizing: border-box;
+    justify-items: center;
+    /* justify-content: center; */
+}
+
+.moving-bar span {
+    display: inline-block;
+    /* justify-content: center; */
+    /* padding-bottom: 2px; */
+    /* margin-bottom: 2px; */
+    font-size: 100%;
+    padding-left: 100%;
+    animation: move 10s linear infinite;
+   
+}
+
+@keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}

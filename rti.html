@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTI - Right to Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        h2 {
+            color: #cccccc;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #1E90FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: aliceblue;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #cccccc;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #333;
+            color: #ffffff;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1E90FF;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Right to Information (RTI)</h1>
+
+        <p>The Right to Information Act, 2005 empowers citizens to seek information from public authorities, promoting transparency and accountability. Under this Act, you have the right to request information related to the functioning, decision-making processes, and operations of public authorities.</p>
+
+        <h2>1. What is RTI?</h2>
+        <p>RTI stands for Right to Information. It is a fundamental right under the Constitution of India. The RTI Act, 2005 allows Indian citizens to request information from public authorities. The Act mandates timely response to citizen requests for government information.</p>
+
+        <h2>2. How to File an RTI Request</h2>
+        <p>To file an RTI request, follow these steps:</p>
+        <ul>
+            <li>Identify the public authority that holds the information you need.</li>
+            <li>Prepare your RTI application in writing. Include your full name, contact details, and specific information you are seeking.</li>
+            <li>Submit the application along with the required application fee to the Public Information Officer (PIO) of the relevant public authority.</li>
+            <li>The PIO is obligated to respond within 30 days of receiving the request.</li>
+        </ul>
+
+        <h2>3. RTI Application Form</h2>
+        <p>You can submit your RTI request using the following form:</p>
+
+        <div class="form-container">
+            <form action="submit_rti_request.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="public_authority">Public Authority:</label>
+                <input type="text" id="public_authority" name="public_authority" required>
+
+                <label for="information">Details of Information Sought:</label>
+                <textarea id="information" name="information" rows="5" required></textarea>
+
+                <label for="application_fee">Application Fee:</label>
+                <select id="application_fee" name="application_fee" required>
+                    <option value="10">INR 10</option>
+                    <option value="other">Other (specify in details)</option>
+                </select>
+
+                <button type="submit">Submit RTI Request</button>
+            </form>
+        </div>
+
+        <h2>4. Contact Information</h2>
+        <p>If you need assistance with filing an RTI request or have any queries, please contact our RTI Cell at <a href="mailto:rti@disasterhelpline.com">rti@disasterhelpline.com</a>.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Disaster Helpline. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disaster Helpline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="nav" style="display: flex; width: 100%; justify-content: space-between">
+        <div style="display: flex">
+            <img height="50px" src="/img/logo.png" alt="" style="padding: 4px" />
+            <h3>Disaster Helpline</h3>
+        </div>
+        <div id="cli" style="
+          display: flex;
+          justify-content: space-between;
+          width: 40%;
+          padding-right: 5%;
+        ">
+            <div class="navi" style="display: flex">
+                <i class="fa-solid fa-house"></i>
+                <a href="/index.html">
+                    <h4>Home</h4>
+                </a>
+            </div>
+            <div class="navi" style="display: flex">
+                <i class="fa-solid fa-handshake-angle"></i
+          ><a href="/helpline.html"><h4>Helpline</h4></a>
+        </div>
+        <div class="navi" style="display: flex">
+          <i class="fa-solid fa-phone"></i>
+                <h4>Contact Us</h4>
+            </div>
+            <div class="navi" style="display: flex">
+                <a href="/about.html">
+                    <h4>About Us</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Moving bar is now just below the nav -->
+    <div class="moving-bar">
+        <span>This is a moving bar that scrolls across the screen!</span>
+    </div>
+
+    <div style="display: flex; flex: 1; flex-direction: row; margin-top: 0px">
+        <div id="sidemain" style="display: flex; flex-direction: column; width: 20%">
+            <div id="side0" style="
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            height: 20vh;
+            margin: 2px;
+          ">
+                <h3 style="margin: 5px; padding-left: 10px">Weather</h3>
+                <div style="padding-left: 10px">
+                    <form action="">
+                        <input type="search" id="search" style="border-radius: 50px" />
+                    </form>
+                </div>
+                <!-- <div style="display: flex;">
+                <img style="margin: 5px;" src="/img/dn.png" width="20%" alt="">
+                <h4>32 </h4>
+                <h4 style="padding-left: 3PX;">clear</h4>
+            </div>      -->
+            </div>
+            <div id="side" style="
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            height: 60vh;
+          ">
+                <h3 style="padding-left: 20px; margin-bottom: 0px">NEWS</h3>
+                <div id="news" style="
+              padding: 15px;
+              height: 80%;
+              overflow-y: auto;
+              scrollbar-width: thin;
+              scrollbar-color: #888 #f1f1f1;
+            ">
+                    <ul>
+                        <li>
+                            <p>There was a flood in Haridwar recently</p>
+                        </li>
+                        <li>
+                            <p>A landslide occurred in the Himalayan region</p>
+                        </li>
+                        <li>
+                            <p>
+                                Hawaii Wildfires: Devastating fires in Maui have caused extensive damage and loss.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Moroccan Earthquake: A powerful quake struck near Marrakech, resulting in numerous casualties.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Moroccan Earthquake: A powerful quake struck near Marrakech, resulting in numerous casualties.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Hawaii Wildfires: Devastating fires in Maui have caused extensive damage and loss.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script src="/weather_api.js"></script>
+
+        </div>
+
+        <div id="main" style="
+          display: flex;
+          width: 80%;
+          padding: 15px;
+          justify-content: space-evenly;
+        ">
+            <div class="box" style="width: 20%">
+                <h3 style="text-align: center">Precautions</h3>
+                <img src="/img/preca.png" width="60%" alt="" />
+                <p>
+                    With proper knowledge and practice you can not only save your life but also others
+                </p>
+                <p>To know more click the button</p>
+                <form action="precautions.html">
+                    <button class="butt">Click to know more</button>
+                </form>
+            </div>
+            <div class="box" style="width: 20%">
+                <h3 style="text-align: center">What to do now</h3>
+                <img src="/img/dn.png" width="60%" alt="" />
+                <p>
+                    If you are currently stuck in a calamity you can still do things to get out
+                </p>
+                <p>To know more click the button</p>
+                <button class="butt">Click to know more</button>
+            </div>
+            <div class="box" style="width: 20%">
+                <h3 style="text-align: center">How to recover</h3>
+                <img src="/img/rec.png" width="60%" alt="" />
+                <p>
+                    If the calamity is over, you can do things to recover your normal lifestyle
+                </p>
+                <p>To know more click the button</p>
+                <form action="/howtorecover.html">
+                    <button class="butt">Click to know more</button>
+                </form>
+            </div>
+            <div class="box" style="width: 20%">
+                <h3 style="text-align: center">Tender</h3>
+                <img src="/img/don.png" width="60%" alt="" />
+                <p>
+                    To help people who are suffering from disaster you can take a tender
+                </p>
+                <p>To help people, click the button</p>
+                <button class="butt">Click to Apply</button>
+            </div>
+        </div>
+    </div>
+    <!-- <hr style="margin: 2px;"> -->
+    <footer>
+        <div id="foot" style="width: 100%; padding: 10px; text-align: center">
+            <div style="display: flex; justify-content: center; gap: 20px">
+                <a href="/terms.html" target="_blank">
+                    <p>Term of Use</p>
+                </a>
+                <a href="/websitepolicy.html" target="_blank">
+                    <p>Website Policy</p>
+                </a>
+                <p>Donate</p>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 20px">
+                <a href="/rti.html" target="_blank">
+                    <p>RTI</p>
+                </a>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
