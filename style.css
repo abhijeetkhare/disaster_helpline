@@ -123,6 +123,43 @@ ul {
     scale: 1.05;
 }
 
+#registration-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#registration-form h2 {
+    margin-bottom: 15px;
+}
+
+#registration-form fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+#registration-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#registration-form input,
+#registration-form select,
+#registration-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#registration-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .moving-bar {
     width: 100%;
     margin-top: 63px;
@@ -158,4 +195,44 @@ ul {
 
 label {
     color: aliceblue;
+}
+
+
+/* Animation keyframes for scrolling */
+
+@keyframes scrollVertical {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+/* Apply the animation to the news section */
+
+#side {
+    position: relative;
+    height: 80%;
+    overflow: hidden;
+}
+
+#side ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    animation: scrollVertical 10s linear infinite;
+}
+
+#side li {
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+
+/* Adding smooth scrolling when user hovers */
+
+#side:hover ul {
+    animation-play-state: paused;
 }

@@ -4,9 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helpline</title>
+    <title>Search Missing People</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #content {
+            flex: 1;
+        }
+        
+        label {
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -50,7 +70,6 @@
     <div class="moving-bar" style="margin-top: 65px;">
         <span>This is a moving bar that scrolls across the screen!</span>
     </div>
-
     <div style="display: flex; flex: 1; flex-direction: row; margin-top: 0px;">
         <div id="side" style="display: flex; width: 20%; box-sizing: border-box; flex-direction: column;height: 70vh;">
             <h3 style="padding-left: 20px;">NEWS</h3>
@@ -77,38 +96,48 @@
                 </ul>
             </div>
         </div>
+        <div id="content" style="display: flex; flex-direction: column; padding-left: 30px;">
+            <h1>Search Missing Person</h1>
 
-        <div id="main" style="padding-left: 20px;">
-            <h1 style="padding: 20px;">Control Rooms</h1>
-            <div>
-                <div style="display: flex; justify-content: space-between; padding: 20px;padding-bottom: 0px;">
-                    <div style="width: 40%; ">
-                        <h3>National Emergency Response Center, Disaster Management Division, Ministry of Home Affairs</h3>
-                        <hr>
-                        <p>Phone No. : 011-23438252</p>
-                        <p>Helpline: 011 1070</p>
-                    </div>
-                    <div style="width: 40%;height: 35vh;">
-                        <h3>National Disaster Management Authority:</h3>
-                        <hr>
-                        <p>Phone No. : 011 26701728/730</p>
-                        <p>Fax: 011 26701729</p>
-                        <p>Helpline: 011 1078</p>
-
-                    </div>
-
+            <form action="/search-missing-person" method="GET" style="padding: 25px; border: 1px solid #ccc; border-radius: 8px; width: 50% ; background-color: white; ">
+                <div style="margin-bottom: 15px;">
+                    <label for="search-name" style="display: block;">Enter Name of Missing Person:</label>
+                    <input type="text" id="search-name" name="name" required style="width: 90%; padding: 8px;">
                 </div>
-                <div style="display: flex;justify-content: space-between; padding: 20px;padding-top: 0px;">
-                    <div style="width: 40%;height: 35vh; ">
-                        <h3>National Disaster Response Force Headquarters:</h3>
-                        <hr>
-                        <p>Phone No. : 011 24363260</p>
-                        <p>FAX : 011 24363261</p>
-                    </div>
+                <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px;">Search</button>
+            </form>
+
+            <div id="main" style="display: flex; width: 100%; padding-top: 15px; justify-content: space-evenly;">
+                <div class="box" style="width: 20%;height: 70%;">
+                    <img src="/img/missper.png" width="60%" alt="">
+                    <p>Name: Harsh</p>
+                    <p>Age: 21</p>
+                    <p>Gender: Male</p>
+                    <button class="butt">See details</button>
+                </div>
+                <div class="box" style="width: 20%;height: 70%;">
+                    <img src="/img/missper.png" width="60%" alt="">
+                    <p>Name: Krishant Basotra</p>
+                    <p>Age: 20</p>
+                    <p>Gender: Male</p>
+                    <button class="butt">See Details</button>
+                </div>
+                <div class="box" style="width: 20%;height: 70%;">
+                    <img src="/img/missper.png" width="60%" alt="">
+                    <p>Name: Atharv Maheshwari</p>
+                    <p>Age: 20</p>
+                    <p>Gender: Male</p>
+                    <button class="butt">See Details</button>
+                </div>
+                <div class="box" style="width: 20%;height: 70%;">
+                    <img src="/img/missper.png" width="60%" alt="">
+                    <p>Name: Vinayak Parashar</p>
+                    <p>Age: 21</p>
+                    <p>Gender: Male</p>
+                    <button class="butt">See Details</button>
                 </div>
             </div>
         </div>
-
     </div>
 
     <hr style="margin: 2px;">

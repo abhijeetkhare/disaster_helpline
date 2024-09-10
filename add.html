@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing people</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        label {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav" style="display: flex; width: 100%; justify-content: space-between">
+        <div style="display: flex">
+            <img height="50px" src="/img/logo.png" alt="" style="padding: 4px" />
+            <h3>Disaster Helpline</h3>
+        </div>
+        <div id="cli" style="
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            padding-right: 5%;
+            ">
+            <div class="navi" style="display: flex">
+                <i class="fa-solid fa-house"></i>
+                <a href="/index.html">
+                    <h4>Home</h4>
+                </a>
+            </div>
+            <div class="navi" style="display: flex">
+                <i class="fa-solid fa-handshake-angle"></i
+            ><a href="/helpline.html"><h4>Helpline</h4></a>
+            </div>
+            <div class="navi" style="display: flex">
+            <i class="fa-solid fa-phone"></i>
+                <a href="/contact us.html">
+                    <h4>Contact Us</h4>
+                </a>
+
+            </div>
+            <div class="navi" style="display: flex">
+                <a href="/about.html">
+                    <h4>About Us</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Move the moving bar here, below the nav -->
+    <div class="moving-bar" style="margin-top: 65px;">
+        <span>This is a moving bar that scrolls across the screen!</span>
+    </div>
+
+    <div style="display: flex; flex: 1; flex-direction: row; margin-top: 0px;">
+        <div id="side" style="display: flex; width: 20%; box-sizing: border-box; flex-direction: column;height: 70vh;">
+            <h3 style="padding-left: 20px;">NEWS</h3>
+            <div id="news" style="padding: 15px; height: 80%; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;">
+                <ul>
+                    <li>
+                        <p>There was a flood in Haridwar recently</p>
+                    </li>
+                    <li>
+                        <p>A landslide occurred in the Himalayan region</p>
+                    </li>
+                    <li>
+                        <p>Hawaii Wildfires: Devastating fires in Maui have caused extensive damage and loss.</p>
+                    </li>
+                    <li>
+                        <p>Moroccan Earthquake: A powerful quake struck near Marrakech, resulting in numerous casualties.</p>
+                    </li>
+                    <li>
+                        <p>Moroccan Earthquake: A powerful quake struck near Marrakech, resulting in numerous casualties.</p>
+                    </li>
+                    <li>
+                        <p>Hawaii Wildfires: Devastating fires in Maui have caused extensive damage and loss.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main" style="flex: 1;">
+            <h1 style="padding: 15px; padding-left: 20px;">Report Missing Person</h1>
+
+            <!-- Registration Form -->
+            <form id="registration-form" action="#" method="post" enctype="multipart/form-data" style="background-color: #f2f2f2; padding: 20px; border-radius: 5px;">
+                <h2 style="margin-bottom: 15px; color: black; font-size: 1.5em">Registration Form</h2>
+
+
+                <legend style="font-size: 1.2em; margin-bottom: 10px;">Your Information</legend>
+
+                <label for="reporter-name" style="display: block; margin-bottom: 10px;">
+                        Full Name:
+                        <input type="text" id="reporter-name" name="reporter_name" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                    </label>
+
+                <label for="reporter-email" style="display: block; margin-bottom: 10px;">
+                        Email:
+                        <input type="email" id="reporter-email" name="reporter_email" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                    </label>
+
+                <label for="reporter-phone" style="display: block; margin-bottom: 10px;">
+                        Phone Number:
+                        <input type="tel" id="reporter-phone" name="reporter_phone" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                    </label>
+                </fieldset>
+
+                <fieldset style="border: none; margin-bottom: 20px;">
+                    <legend style="font-size: 1.2em; margin-bottom: 10px;">Missing Person Details</legend>
+
+                    <label for="missing-name" style="display: block; margin-bottom: 10px;">
+                        Full Name:
+                        <input type="text" id="missing-name" name="missing_name" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                    </label>
+
+                    <label for="missing-age" style="display: block; margin-bottom: 10px;">
+                        Age:
+                        <input type="number" id="missing-age" name="missing_age" min="0" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                    </label>
+
+                    <label for="missing-gender" style="display: block; margin-bottom: 10px;">
+                        Gender:
+                        <select id="missing-gender" name="missing_gender" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </label>
+
+                    <label for="last-seen" style="display: block; margin-bottom: 10px;">
+                        Last Seen Location:
+                        <input type="text" id="last-seen" name="last_seen_location" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                    </label>
+
+                    <label for="reporter-name" style="display: block; margin-bottom: 10px;">
+                        Nearest police station:
+                        <input type="text" id="reporter-name" name="reporter_name" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                    </label>
+
+                    <label for="description" style="display: block; margin-bottom: 10px;">
+                        Description:
+                        <textarea id="description" name="description" rows="4" required style="width: 100%; padding: 8px; margin-top: 5px;"></textarea>
+                    </label>
+
+                    <label for="photo" style="display: block; margin-bottom: 10px;">
+                        Upload Photo:
+                        <input type="file" id="photo" name="photo" accept="image/*" required style="margin-top: 5px;">
+                    </label>
+                </fieldset>
+
+                <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <hr style="margin: 2px;">
+    <footer>
+        <div id="foot" style="width: 100%; padding: 10px; text-align: center">
+            <div style="display: flex; justify-content: center; gap: 20px">
+                <a href="/terms.html" target="_blank">
+                    <p>Term of Use</p>
+                </a>
+                <a href="/websitepolicy.html" target="_blank">
+                    <p>Website Policy</p>
+                </a>
+                <a href="/donate.html">
+                    <p>Donate</p>
+                </a>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 20px">
+                <a href="/rti.html" target="_blank">
+                    <p>RTI</p>
+                </a>
+                <a href="/contact us.html">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

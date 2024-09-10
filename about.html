@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Helpline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        
+        #team {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        .team-member {
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 250px;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+        
+        .profile-pic {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        h3 {
+            margin: 10px 0;
+            color: #007bff;
+        }
+        
+        p {
+            color: #555;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="nav" style="display: flex; width: 100%; justify-content: space-between">
+        <div style="display: flex">
+            <img height="50px" src="/img/logo.png" alt="" style="padding: 4px" />
+            <h3>Disaster Helpline</h3>
+        </div>
+        <div id="cli" style="
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            padding-right: 5%;
+            ">
+            <div class="navi" style="display: flex">
+                <i class="fa-solid fa-house"></i>
+                <a href="/index.html">
+                    <h4>Home</h4>
+                </a>
+            </div>
+            <div class="navi" style="display: flex">
+                <i class="fa-solid fa-handshake-angle"></i
+            ><a href="/helpline.html"><h4>Helpline</h4></a>
+            </div>
+            <div class="navi" style="display: flex">
+            <i class="fa-solid fa-phone"></i>
+                <a href="/contact us.html">
+                    <h4>Contact Us</h4>
+                </a>
+
+            </div>
+            <div class="navi" style="display: flex">
+                <a href="/about.html">
+                    <h4>About Us</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Moving bar is now just below the nav -->
+    <div class="moving-bar">
+        <span>This is a moving bar that scrolls across the screen!</span>
+    </div>
+
+    <div style="flex: 1; margin-top: 0px;">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+
+        <section id="team">
+            <div class="team-member">
+                <img src="/img/ab.jpg" alt="Person 1" class="profile-pic">
+                <h3>Abhijeet Khare</h3>
+                <p>Lead Developer</p>
+            </div>
+
+            <div class="team-member">
+                <img src="/img/span.jpg" alt="Person 2" class="profile-pic">
+                <h3>Spandan Kar</h3>
+                <p>Lead Developer</p>
+            </div>
+
+
+
+            <div class="team-member">
+                <img src="/img/preeti.jpg" alt="Person 4" class="profile-pic">
+                <h3>Preeti Singh</h3>
+                <p>Content Writer</p>
+            </div>
+
+            <div class="team-member">
+                <img src="/img/pal.jpg" alt="Person 5" class="profile-pic">
+                <h3>K. Pallavi </h3>
+                <p>Content Writer</p>
+            </div>
+
+            <div class="team-member">
+                <img src="/img/khush.jpg" alt="Person 6" class="profile-pic">
+                <h3>Khushi</h3>
+                <p>Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="/img/ark.jpg" alt="Person 3" class="profile-pic">
+                <h3>Arkadip Chowdhury</h3>
+                <p>UI/UX Designer</p>
+            </div>
+        </section>
+
+
+    </div>
+    <!-- <hr style="margin: 2px;"> -->
+    <footer>
+        <div id="foot" style="width: 100%; padding: 10px; text-align: center">
+            <div style="display: flex; justify-content: center; gap: 20px">
+                <a href="/terms.html" target="_blank">
+                    <p>Term of Use</p>
+                </a>
+                <a href="/websitepolicy.html" target="_blank">
+                    <p>Website Policy</p>
+                </a>
+                <a href="/donate.html">
+                    <p>Donate</p>
+                </a>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 20px">
+                <a href="/rti.html" target="_blank">
+                    <p>RTI</p>
+                </a>
+                <a href="/contact us.html">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
